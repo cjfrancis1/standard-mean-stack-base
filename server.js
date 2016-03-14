@@ -2,15 +2,15 @@
 
 const express = require('express'),
     path = require('path'),
-    config = require('./node/config/config.js'),
-    mongoose = require('mongoose').connect(config.dbURL),
+    config = require('./config/config.js'),
+    mongoose = require('mongoose').connect(config.env.dbURL),
     bodyParser = require('body-parser');
 
 const app = express();
-const router = require('./node/api');
+const router = require(config.app.srcDir + 'api');
 
 app.set('port', process.env.PORT || 5000);
-app.set('host', config.host);
+app.set('host', config.env.host);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
