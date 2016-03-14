@@ -1,5 +1,5 @@
 {
     "environment": "production",
-    "host": "http://localhost:5000",
+    "host": "http://localhost:8080",
     "dbURL": "mongodb://localhost/"
 }

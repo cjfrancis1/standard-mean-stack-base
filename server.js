@@ -12,11 +12,11 @@ require(config.app.srcDir + 'seed');
 
 const router = require(config.app.srcDir + 'api');
 
-app.set('port', process.env.PORT || 5000);
+app.set('port', process.env.PORT || 8080);
 app.set('host', config.env.host);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/', express.static(path.join(__dirname, 'public')));
 app.use('/api', router);
 
 const server = require('http').createServer(app);
