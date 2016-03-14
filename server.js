@@ -3,10 +3,13 @@
 const express = require('express'),
     path = require('path'),
     config = require('./config/config.js'),
-    mongoose = require('mongoose').connect(config.env.dbURL),
     bodyParser = require('body-parser');
 
 const app = express();
+
+require(config.app.srcDir + 'database');
+require(config.app.srcDir + 'seed');
+
 const router = require(config.app.srcDir + 'api');
 
 app.set('port', process.env.PORT || 5000);
