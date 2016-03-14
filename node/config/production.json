@@ -1,5 +1,5 @@
 {
     "environment": "production",
     "host": "http://localhost:5000",
-    "dbURL": "mongodb://localhost/" //Insert DB name after mongodb://localhost
+    "dbURL": "mongodb://localhost/"
 }
