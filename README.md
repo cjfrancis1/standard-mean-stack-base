@@ -1,2 +1,2 @@
 # Standard MEAN Stack Base
-This is my standard codebase for MEAN Stack applications.
+This is my standard codebase for developing MEAN Stack applications.
