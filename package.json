@@ -21,6 +21,7 @@
     "angular": "*",
     "body-parser": "*",
     "express": "*",
-    "mongoose": "*"
+    "mongoose": "*",
+    "bootstrap": "*"
   }
 }
