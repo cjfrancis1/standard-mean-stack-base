@@ -20,8 +20,9 @@
   "dependencies": {
     "angular": "*",
     "body-parser": "*",
+    "bootstrap": "*",
     "express": "*",
-    "mongoose": "*",
-    "bootstrap": "*"
+    "jquery": "*",
+    "mongoose": "*"
   }
 }
