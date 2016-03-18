@@ -38,6 +38,7 @@
     "gulp-notify": "*",
     "gulp-rename": "*",
     "gulp-ruby-sass": "*",
+    "gulp-sourcemaps": "*",
     "gulp-uglify": "*"
   }
 }
