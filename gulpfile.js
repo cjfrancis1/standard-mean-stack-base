@@ -1,3 +1,5 @@
+"use strict";
+
 // Load plugins
 var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
