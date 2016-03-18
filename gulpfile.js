@@ -34,10 +34,12 @@ gulp.task('styles', function() {
 // Scripts
 gulp.task('scripts', function() {
     return gulp.src('src/js/**/*.js')
+        .pipe(sourcemaps.init())
         .pipe(concat('main.js'))
         .pipe(gulp.dest('public/dist/scripts'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(uglify())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('public/dist/scripts'))
         .pipe(notify({ message: 'Scripts task complete' }));
 });
@@ -51,10 +53,12 @@ gulp.task('vendor_scripts', function() {
             'src/vendor/collapse.js',
             'src/vendor/angular.js',
             'src/vendor/**/*.js'])
+        .pipe(sourcemaps.init())
         .pipe(concat('vendor.js'))
         .pipe(gulp.dest('public/dist/scripts/vendor'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(uglify())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('public/dist/scripts/vendor'))
         .pipe(notify({ message: 'Vendor scripts task complete' }));
 });
