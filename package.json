@@ -21,6 +21,7 @@
     "angular": "*",
     "body-parser": "*",
     "bootstrap": "*",
+    "bootstrap-sass": "*",
     "express": "*",
     "jquery": "*",
     "mongoose": "*"
